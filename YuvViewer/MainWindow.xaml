@@ -4,6 +4,9 @@
         Title="YuvViewer" Height="350" Width="525" AllowDrop="True" Drop="Window_Drop" PreviewDragOver="Window_PreviewDragOver">
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <ComboBox VerticalAlignment="Center">
+                <ComboBoxItem Content="YUV422" IsSelected="True" />
+            </ComboBox>
             <Label Content="Width" Width="50" />
             <TextBox Width="50" Text="{Binding InputWidth, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" />
             <Label Content="Height" Width="50" />
