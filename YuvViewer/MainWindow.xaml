@@ -1,0 +1,14 @@
+﻿<Window x:Class="YuvViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="YuvViewer" Height="350" Width="525" AllowDrop="True" Drop="Window_Drop" PreviewDragOver="Window_PreviewDragOver">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <Label Content="Width" Width="50" />
+            <TextBox Width="50" Text="{Binding InputWidth, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" />
+            <Label Content="Height" Width="50" />
+            <TextBox Width="50" Text="{Binding InputHeight, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" />
+        </StackPanel>
+        <Image Source="{Binding InputImage}" />
+    </DockPanel>
+</Window>
